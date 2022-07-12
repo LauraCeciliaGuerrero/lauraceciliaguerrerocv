@@ -1,3 +1,10 @@
+/* Font Awesome icons (free version) */
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css";
+
+/* Google fonts */
+@import "https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700";
+@import "https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i";
+
 
 $white:    #fff;
 $gray-100: #f8f9fa;
@@ -10,6 +17,8 @@ $gray-700: #495057;
 $gray-800: #343a40;
 $gray-900: #212529;
 $black:    #000;
+
+
 
 
 
@@ -10700,11 +10709,7 @@ p.lead {
 }
 
 .social-icons .social-icon:hover {
-  /*background-color: #e91e63;-webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-decoration: underline;*/
   background: linear-gradient(to bottom, rgba(116, 128, 242, 0.99) 50%, rgba(252, 92, 125, 0.99) 90%);
-
 }
 
 .dev-icons {
@@ -10735,10 +10740,15 @@ section.resume-section .resume-section-content {
   }
 }
 
-@import "../node_modules/bootstrap/scss/bootstrap";
-
-.degradado {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(252, 92, 125, 0.99)), to(rgba(116, 128, 242, 0.99))) !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
+.color-degradado {
+  background: linear-gradient(to top, rgba(252, 92, 125, 0.99) 50%, rgba(116, 128, 242, 0.99) 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+.color-degradado:hover {
+  background: linear-gradient(to bottom, rgba(252, 92, 125, 0.99) 50%, rgba(116, 128, 242, 0.99) 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap";
